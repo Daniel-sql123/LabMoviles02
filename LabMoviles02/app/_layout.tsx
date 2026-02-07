@@ -4,17 +4,25 @@ import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/use-color-scheme';
 
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
-
+import { View, Text } from 'react-native';
+import Button from './(tabs)/button';
 export default function RootLayout() {
   const colorScheme = useColorScheme();
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <button />
-      <StatusBar style="auto" backgroundColor="#1e90ff"/>
-    </ThemeProvider>
+    <View
+      style={{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      <Text style={{ fontSize: 22, marginBottom: 20 }}>
+        Demo de controles
+      </Text>
+
+      {/* AQUÍ SE LLAMA EL BOTÓN */}
+      <Button />
+    </View>
   );
 }

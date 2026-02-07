@@ -4,7 +4,8 @@ import React from 'react'
 export default function button() {
   return (
     <View>
-      <Text>button</Text>
+      <Text>Control Button</Text>
+
       <Button
         title="Presióname"
         color="#1e90ff"
