@@ -1,7 +1,6 @@
-import { View, Text, Button, Alert } from 'react-native'
-import React from 'react'
+import { View, Text, Button, Alert } from 'react-native';
 
-export default function button() {
+export default function ButtonControl() {
   return (
     <View>
       <Text>Control Button</Text>
@@ -17,5 +16,5 @@ export default function button() {
         }
       />
     </View>
-  )
+  );
 }
