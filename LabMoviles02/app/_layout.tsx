@@ -10,10 +10,8 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <SafeAreaView style={{ flex: 1, backgroundColor: '#ff98f1' }}>
-        {/* StatusBar GLOBAL */}
         <StatusBar style="light" />
 
-        {/* Rutas */}
         <Stack screenOptions={{ headerShown: false }} />
       </SafeAreaView>
     </ThemeProvider>

@@ -3,10 +3,31 @@ import { Tabs } from 'expo-router';
 export default function TabsLayout() {
   return (
     <>
-      <Tabs screenOptions={{ headerShown: false }}>
+      <Tabs screenOptions={{ headerShown: false, 
+      
+        tabBarStyle: {
+          backgroundColor: '#fde2f3',
+          height: 65,
+          borderTopWidth: 0,
+        },
+
+        // 👉 Color del ícono/texto
+        tabBarActiveTintColor: '#d872ad',
+        tabBarInactiveTintColor: '#8a8a8a',
+
+        // 👉 Estilo del texto
+        tabBarLabelStyle: {
+          fontSize: 12,
+          fontWeight: '600',
+        },
+      }}>
       <Tabs.Screen
         name="index"
         options={{ title: 'Inicio' }}
+      />
+      <Tabs.Screen
+        name="PruebaButton"
+        options={{ title: 'Botón' }}
       />
     </Tabs>
     </>

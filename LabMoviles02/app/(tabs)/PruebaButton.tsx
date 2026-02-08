@@ -1,6 +1,7 @@
 import { Text, View } from 'react-native';
+import Button from '../../components/Button';
 
-export default function HomeScreen() {
+export default function ButtonScreen() {
   return (
     <View
       style={{
@@ -11,8 +12,9 @@ export default function HomeScreen() {
       }}
     >
       <Text style={{ color: '#d872ad', fontSize: 24, fontWeight: 'bold'}}>
-        Pantalla de Inicio
+        Demostracion de control
       </Text>
+        <Button />
     </View>
   );
 }
