@@ -3,10 +3,12 @@ import { Alert, Button, StyleSheet, View } from 'react-native';
 export default function ButtonControl() {
   return (
     <View style={styles.container}>
+      {/* Wrapper para aplicar bordes redondeados */}
        <View style={styles.buttonWrapper}>
-      <Button
+        <Button
         title="Presióname "
-        color="#e93c9e"  
+        color="#e93c9e" 
+        // Acción al presionar el botón 
         onPress={() =>
           Alert.alert('Mensaje :)', 'El botón fue presionado correctamente 💗')
         }
@@ -22,16 +24,17 @@ const styles = StyleSheet.create({
     padding: 20,
     borderRadius: 30,
     shadowColor: 'black',
-    elevation: 6,
     alignItems: 'center',
-     marginTop: 50,
-      
+    marginTop: 50,
+    // Sombra en Android
+    elevation: 6,
     // Sombra para iOS
     shadowOffset: { width: 0, height: 3 }, 
     shadowOpacity: 0.2, 
     shadowRadius: 6 
     
   },
+  // Permite que el botón respete el borde redondeado
   buttonWrapper: {
     borderRadius: 20,  
     overflow: 'hidden', 

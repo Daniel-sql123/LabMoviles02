@@ -3,7 +3,10 @@ import { Tabs } from 'expo-router';
 export default function TabsLayout() {
   return (
     <>
-      <Tabs screenOptions={{ headerShown: false, 
+      <Tabs screenOptions={{ 
+        // Oculta el header superior
+        headerShown: false, 
+        // Estilos de la barra inferior
         tabBarStyle: {
           backgroundColor: '#fde2f3',
           height: 65,
@@ -16,6 +19,7 @@ export default function TabsLayout() {
           fontWeight: '600',
         },
       }}>
+        {/* Pestañas de navegacion */}
       <Tabs.Screen
         name="index"
         options={{ title: 'Inicio' }}

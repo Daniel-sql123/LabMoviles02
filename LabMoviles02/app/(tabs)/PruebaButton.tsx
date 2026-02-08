@@ -14,6 +14,7 @@ export default function ButtonScreen() {
       <Text style={{ color: '#d872ad', fontSize: 24, fontWeight: 'bold'}}>
         Demostracion de control
       </Text>
+      {/* Componente botón */}
         <Button />
     </View>
   );
