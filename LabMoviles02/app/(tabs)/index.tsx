@@ -1,5 +1,5 @@
-import { View, Text } from 'react-native';
-import Button from './Button';
+import { Text, View } from 'react-native';
+import Button from './button';
 
 export default function HomeScreen() {
   return (
