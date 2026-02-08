@@ -10,19 +10,26 @@ export default function RootLayout() {
   const colorScheme = useColorScheme();
 
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
-      <Text style={{ fontSize: 22, marginBottom: 20 }}>
-        Demo de controles
-      </Text>
+    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+      
+      {/* StatusBar */}
+      <StatusBar style="light" backgroundColor="#1e90ff" />
 
-      {/* AQUÍ SE LLAMA EL BOTÓN */}
-      <Button />
-    </View>
+      {/* Contenido */}
+      <View
+        style={{
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <Text style={{ fontSize: 22, marginBottom: 20 }}>
+          Demo de controles
+        </Text>
+
+        <Button/>
+      </View>
+
+    </ThemeProvider>
   );
 }
