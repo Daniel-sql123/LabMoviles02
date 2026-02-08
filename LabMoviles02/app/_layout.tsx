@@ -1,8 +1,8 @@
 import { useColorScheme } from '@/hooks/use-color-scheme';
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { Stack } from 'expo-router';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView } from 'react-native';
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
@@ -14,7 +14,7 @@ export default function RootLayout() {
         <StatusBar style="light" />
 
         {/* Rutas */}
-        <Stack />
+        <Stack screenOptions={{ headerShown: false }} />
       </SafeAreaView>
     </ThemeProvider>
   );

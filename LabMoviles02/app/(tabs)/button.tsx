@@ -7,7 +7,7 @@ export default function ButtonControl() {
 
       <Button
         title="Presióname"
-        color="#1e90ff"
+        color="#d872ad"
         onPress={() =>
           Alert.alert(
             'Mensaje',
